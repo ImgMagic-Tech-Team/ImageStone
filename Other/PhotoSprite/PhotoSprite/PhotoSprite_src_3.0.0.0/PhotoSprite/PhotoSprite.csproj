@@ -1,0 +1,468 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D668DE93-46A9-44DF-AC11-5657B8AB04F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoSprite</RootNamespace>
+    <AssemblyName>PhotoSprite</AssemblyName>
+    <ApplicationIcon>Logo.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialog\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\AdvancedDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\AdvancedDialog.Designer.cs">
+      <DependentUpon>AdvancedDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ArtStringDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ArtStringDialog.Designer.cs">
+      <DependentUpon>ArtStringDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DirectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DirectionDialog.Designer.cs">
+      <DependentUpon>DirectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\InosculateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\InosculateDialog.Designer.cs">
+      <DependentUpon>InosculateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\MagicDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\MagicDialog.Designer.cs">
+      <DependentUpon>MagicDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\MappingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\MappingDialog.Designer.cs">
+      <DependentUpon>MappingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\RegionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\RegionDialog.Designer.cs">
+      <DependentUpon>RegionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\FilterDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\FilterDialog.Designer.cs">
+      <DependentUpon>FilterDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\HistogramDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\HistogramDialog.Designer.cs">
+      <DependentUpon>HistogramDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\HslDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\HslDialog.Designer.cs">
+      <DependentUpon>HslDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\MotionBlurDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\MotionBlurDialog.Designer.cs">
+      <DependentUpon>MotionBlurDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ResizeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ResizeDialog.Designer.cs">
+      <DependentUpon>ResizeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\TranslationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\TranslationDialog.Designer.cs">
+      <DependentUpon>TranslationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\OilPaintingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\OilPaintingDialog.Designer.cs">
+      <DependentUpon>OilPaintingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\AngleDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\AngleDialog.Designer.cs">
+      <DependentUpon>AngleDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\RedEyeRemovalDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\RedEyeRemovalDialog.Designer.cs">
+      <DependentUpon>RedEyeRemovalDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\SlantDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\SlantDialog.Designer.cs">
+      <DependentUpon>SlantDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\TrimDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\TrimDialog.Designer.cs">
+      <DependentUpon>TrimDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageProcessing\Algebra.cs" />
+    <Compile Include="ColorSpace\CMYK.cs" />
+    <Compile Include="ColorSpace\HSI.cs" />
+    <Compile Include="ColorSpace\HSV.cs" />
+    <Compile Include="ColorSpace\HSL.cs" />
+    <Compile Include="ImageProcessing\ColorChange.cs" />
+    <Compile Include="ImageProcessing\Effect.Extend.cs" />
+    <Compile Include="ImageProcessing\Function.cs" />
+    <Compile Include="ImageProcessing\GrayProcessing.cs" />
+    <Compile Include="ImageProcessing\Filter.cs" />
+    <Compile Include="ImageProcessing\Histogram.cs" />
+    <Compile Include="ImageProcessing\RegionClip.cs" />
+    <Compile Include="ImageProcessing\Statistics.cs" />
+    <Compile Include="ImageProcessing\ImageInfo.cs" />
+    <Compile Include="ImageProcessing\ImageTransform.cs" />
+    <Compile Include="ImageProcessing\Logic.cs" />
+    <Compile Include="ImageProcessing\Morphologic.Bitmap.cs" />
+    <Compile Include="ImageProcessing\Morphologic.cs" />
+    <Compile Include="ImageProcessing\Segmentation.Bitmap.cs" />
+    <Compile Include="ImageProcessing\Segmentation.cs" />
+    <Compile Include="ImageProcessing\Watermark.cs" />
+    <Compile Include="Widget\AngleChooser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\AngleChooser.designer.cs">
+      <DependentUpon>AngleChooser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\Canvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\Canvas.Designer.cs">
+      <DependentUpon>Canvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\ColorBalanceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ColorBalanceDialog.Designer.cs">
+      <DependentUpon>ColorBalanceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DegreeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DegreeDialog.Designer.cs">
+      <DependentUpon>DegreeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\GammaCorrectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\GammaCorrectDialog.Designer.cs">
+      <DependentUpon>GammaCorrectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\GrayDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\GrayDialog.Designer.cs">
+      <DependentUpon>GrayDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\NewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\NewDialog.Designer.cs">
+      <DependentUpon>NewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\OptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\OptionDialog.Designer.cs">
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\PaperCutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\PaperCutDialog.Designer.cs">
+      <DependentUpon>PaperCutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\PseudoColorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\PseudoColorDialog.Designer.cs">
+      <DependentUpon>PseudoColorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\SketchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\SketchDialog.Designer.cs">
+      <DependentUpon>SketchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\CustomDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\CustomDialog.Designer.cs">
+      <DependentUpon>CustomDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorSpace\YUV.cs" />
+    <Compile Include="ImageProcessing\EdgeDetect.cs" />
+    <Compile Include="ImageProcessing\Effect.Common.cs" />
+    <Compile Include="ImageFormat\Psf.cs" />
+    <Compile Include="Graphic\Graphic.cs" />
+    <Compile Include="ImageProcessing\Matrix3x3.cs" />
+    <Compile Include="ImageProcessing\MatrixNxN.cs" />
+    <Compile Include="ImageProcessing\Adjustment.cs" />
+    <Compile Include="History.cs" />
+    <Compile Include="Dialog\ColorPickerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\ColorPickerDialog.Designer.cs">
+      <DependentUpon>ColorPickerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widget\Layer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widget\Layer.Designer.cs">
+      <DependentUpon>Layer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\BrushTool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tool\ColorPickerTool.cs" />
+    <Compile Include="Tool\EllipseSelectTool.cs" />
+    <Compile Include="Tool\EraserTool.cs" />
+    <Compile Include="Tool\LassoSelectTool.cs" />
+    <Compile Include="Tool\LineTool.cs" />
+    <Compile Include="Tool\PaintBucketTool.cs" />
+    <Compile Include="Tool\PencilTool.cs" />
+    <Compile Include="Tool\RectangleSelectTool.cs" />
+    <Compile Include="Tool\RectangleTool.cs" />
+    <Compile Include="Tool\TextTool.cs" />
+    <Compile Include="Tool\Tool.cs" />
+    <Compile Include="Tool\ToolType.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dialog\AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\AdvancedDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdvancedDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ArtStringDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ArtStringDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DirectionDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DirectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\InosculateDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InosculateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\MagicDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MagicDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\MappingDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MappingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\RegionDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\FilterDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FilterDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\HistogramDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HistogramDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\HslDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HslDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\MotionBlurDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MotionBlurDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ResizeDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ResizeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\TranslationDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TranslationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\OilPaintingDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OilPaintingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\AngleDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AngleDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\RedEyeRemovalDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RedEyeRemovalDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SlantDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SlantDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\TrimDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrimDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\AngleChooser.resx">
+      <DependentUpon>AngleChooser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\Canvas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Canvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ColorBalanceDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorBalanceDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DegreeDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DegreeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\GammaCorrectDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GammaCorrectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\GrayDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GrayDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\NewDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\OptionDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\PaperCutDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PaperCutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\PseudoColorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PseudoColorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SketchDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SketchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\CustomDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\ColorPickerDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorPickerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widget\Layer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Layer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WinMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WinMain.Menu.Context.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinMain.Designer.cs">
+      <DependentUpon>WinMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinMain.Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinMain.Tool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo.ICO" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

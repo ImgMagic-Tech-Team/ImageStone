@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FilterExplorer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC24D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "jpeglib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/FilterExplorer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\计算机程序\ImageShop及相关代码\相关大型软件源代码\FilterExplorer\Filters.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC24D.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPC24E.tmp" with contents
+[
+JpegLib.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/FilterExplorer.pdb" /debug /machine:I386 /out:"Debug/FilterExplorer.exe" /pdbtype:sept 
+".\Debug\bmpfile.obj"
+".\Debug\Dialogs.obj"
+".\Debug\FilterExplorer.obj"
+".\Debug\FilterExplorerDoc.obj"
+".\Debug\FilterExplorerView.obj"
+".\Debug\Filters.obj"
+".\Debug\jpegfile.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\FilterExplorer.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPC24E.tmp"
+<h3>Output Window</h3>
+Compiling...
+Filters.cpp
+D:\计算机程序\ImageShop及相关代码\相关大型软件源代码\FilterExplorer\Filters.cpp(1813) : warning C4101: 'blurrad' : unreferenced local variable
+D:\计算机程序\ImageShop及相关代码\相关大型软件源代码\FilterExplorer\Filters.cpp(1814) : warning C4101: 'gre' : unreferenced local variable
+D:\计算机程序\ImageShop及相关代码\相关大型软件源代码\FilterExplorer\Filters.cpp(1814) : warning C4101: 'red' : unreferenced local variable
+D:\计算机程序\ImageShop及相关代码\相关大型软件源代码\FilterExplorer\Filters.cpp(1815) : warning C4101: 'num' : unreferenced local variable
+D:\计算机程序\ImageShop及相关代码\相关大型软件源代码\FilterExplorer\Filters.cpp(1814) : warning C4101: 'blu' : unreferenced local variable
+Linking...
+
+
+
+<h3>Results</h3>
+FilterExplorer.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>
